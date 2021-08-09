@@ -34,7 +34,7 @@ class lifegame:
 def display(win, buff, ny, nx):
     for i in range(0, ny):
         for j in range(0, nx):
-            win.addch(i, j, buff[i, j])
+            win.addch(i, j, int(buff[i, j]))
     win.refresh()
 
 def main(scr):
